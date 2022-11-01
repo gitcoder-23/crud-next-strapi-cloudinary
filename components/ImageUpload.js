@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import styles from '../styles/styles/Form.module.css';
+import styles from '../styles/styles/Form.module.css';
 import { API_URL } from '@/config/index';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
