@@ -1,9 +1,10 @@
-import styles from "@/styles/Hero.module.css";
+import styles from '@/styles/Hero.module.css';
 
 export default function Hero() {
-    return (
-        <div className={styles.hero}>
-            <h1>Find Out the Latest Sport News</h1>
-        </div>
-    )
+  return (
+    <div className={styles.hero}>
+      <h1>Find Out the Latest Sport News</h1>
+      <h3>Crud-Next-Strapi-Cloudinary</h3>
+    </div>
+  );
 }
