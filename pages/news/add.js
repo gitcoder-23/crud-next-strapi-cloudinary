@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import { API_URL } from '@/config/index';
-import styles from '../styles/form.module.css';
+import styles from '@/styles/form.module.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';

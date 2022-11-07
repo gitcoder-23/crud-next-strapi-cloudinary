@@ -7,7 +7,7 @@ import moment from 'moment';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/form.module.css';
+import styles from '@/styles/form.module.css';
 import Modal from '@/components/Modal';
 import Image from 'next/image';
 import ImageUpload from '@/components/ImageUpload';
