@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react';
 
 export default function HomePage() {
   const [news, setNews] = useState([]);
+  const [dummy, setDummy] = useState([]);
+  const [dummyData, setDummyData] = useState();
   const getSports = () => {
     axios
       .get(`${API_URL}/api/sports?_sort=date:ASC&_limit=5&populate=*`)
@@ -19,9 +21,40 @@ export default function HomePage() {
       .catch((err) => console.log(err));
   };
 
+  const getDummyApi = () => {
+    axios
+      .get(`${API_URL}/api/dummy-apis`)
+      .then((resDummy) => {
+        // console.log('resDummy=>', resDummy);
+        if (resDummy?.status === 200) {
+          setDummy(resDummy?.data?.data);
+          resDummy?.data?.data?.map((data) => {
+            setDummyData(data);
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  console.log('dummyData->', dummyData?.attributes?.dummyApiUrl);
+
   useEffect(() => {
     getSports();
-  }, []);
+    getDummyApi();
+
+    setTimeout(() => {
+      if (dummyData && dummyData?.attributes) {
+        axios
+          .get(`${dummyData?.attributes?.dummyApiUrl}`)
+          .then((res) => {
+            console.log('res-->', res);
+          })
+          .catch((errApi) => console.log(errApi));
+      }
+    }, 500);
+  }, [dummyData?.attributes?.dummyApiUrl]);
 
   return (
     <div>
