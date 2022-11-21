@@ -11,11 +11,66 @@ Strapi v4 - can't add image to existing entry
 https://docs.strapi.io/developer-docs/latest/plugins/upload.html#examples
 
 
+// Facebook ops
+
+UID:  jwatson7858@gmail.com
+PWD:  Jwatson@007
+
+https://developers.facebook.com/apps/644386924020988/add/
 
 
+1> After login using Facebook
+
+2> https://developers.facebook.com/?no_redirect=1
+3> https://developers.facebook.com/docs/
+4> https://developers.facebook.com/docs/graph-api/
+5> https://developers.facebook.com/docs/graph-api/overview (GET, POST)
+6> https://developers.facebook.com/docs/graph-api/get-started
+7> https://developers.facebook.com/docs/graph-api/guides
+8> https://developers.facebook.com/docs/permissions/reference
+9> https://developers.facebook.com/docs/graph-api/reference/post/
+10> https://developers.facebook.com/docs/pages/access-tokens/
+11> https://developers.facebook.com/docs/pages/publishing
+
+// youtube fetch from facebook
+https://youtu.be/CEZhr3c5uWY(used)
+https://youtu.be/2jYmxWC11ac
+https://youtu.be/vsuDgQVLKwQ(PHP)
+https://youtu.be/Tuj2EgJKy90
+https://youtu.be/CEZhr3c5uWY
 
 
+// Pages-Post Feed api
+https://developers.facebook.com/docs/pages/publishing
+https://developers.facebook.com/docs/graph-api/overview
+https://developers.facebook.com/docs/graph-api/reference/v15.0/page/feed
+https://developers.facebook.com/docs/graph-api/reference/page-post/
+https://developers.facebook.com/docs/graph-api/reference/photo/
 
+102013339414404/feed?fields=created_time,from,id,picture
+
+
+// User pages
+https://developers.facebook.com/docs/graph-api/reference/v15.0/user/posts
+https://developers.facebook.com/docs/graph-api/reference/v15.0/page/feed
+https://developers.facebook.com/docs/graph-api/reference/photo/
+https://developers.facebook.com/docs/graph-api/reference/user/photos/
+
+me?fields=id,name
+curl -i -X GET \
+ "https://graph.facebook.com/v15.0/{user-id}/picture"
+
+Scopes:
+email, 
+pages_manage_instant_articles, 
+pages_show_list, 
+pages_messaging, 
+pages_read_engagement, 
+pages_manage_metadata, 
+pages_read_user_content, 
+pages_manage_posts, 
+pages_manage_engagement, 
+public_profile
 
 
 
