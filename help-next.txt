@@ -18,6 +18,9 @@ PWD:  Jwatson@007
 
 https://developers.facebook.com/apps/644386924020988/add/
 
+https://graph.facebook.com/USER-ID?
+    metadata=1&access_token=ACCESS-TOKEN
+
 
 1> After login using Facebook
 
@@ -41,6 +44,7 @@ https://youtu.be/CEZhr3c5uWY
 
 
 // Pages-Post Feed api
+https://developers.facebook.com/tools/
 https://developers.facebook.com/docs/pages/publishing
 https://developers.facebook.com/docs/graph-api/overview
 https://developers.facebook.com/docs/graph-api/reference/v15.0/page/feed
